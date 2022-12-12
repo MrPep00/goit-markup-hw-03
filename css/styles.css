@@ -189,6 +189,7 @@ main page styles
 
   color: var(--main-text-color);
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
 .team-member-job {
   font-size: 16px;
