@@ -1,11 +1,9 @@
 * {
-  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
 body {
   font-family: "Roboto", sans-serif;
-  width: 1600px;
 }
 :root {
   --background-color: #2f303a;
@@ -19,21 +17,29 @@ body {
 }
 .header {
   line-height: 1.17;
-  display: flex;
   border-bottom: 1px solid var(--header-border);
 }
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo-nav {
+  width: 523px;
+  display: flex;
+  justify-content: space-between;
+}
 .logo {
-  margin: 24px 97px 25px 215px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .menu-nav {
-  padding: 32px 0;
-  padding-right: 340px;
-}
-.studio {
-  padding-right: 53px;
-}
-.portfolio {
-  padding-right: 70px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .nav-list-item {
   text-decoration: none;
@@ -55,14 +61,14 @@ body {
   color: var(--button-color);
 }
 .header-contacts {
-  padding: 32px 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .header-mail {
   text-decoration: none;
   color: var(--secondary-text-color);
   font-size: 14px;
   font-weight: 500;
-  margin-right: 50px;
 }
 .header-mail:hover {
   color: var(--button-color);
@@ -98,7 +104,7 @@ main page styles
 
   text-transform: uppercase;
   color: var(--button-text-color);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .buttons {
   font-size: 16px;
@@ -115,11 +121,13 @@ main page styles
 }
 .benefits {
   text-align: left;
+  padding: 94px 0 100px;
 }
 .benefits-list {
-  padding: 94px 215px 100px 215px;
+  align-items: center;
   gap: 30px;
 }
+
 .benefits-list-item-name {
   font-weight: 700;
   font-size: 14px;
@@ -134,7 +142,7 @@ main page styles
 }
 .offers {
   text-align: center;
-  padding: 100px 215px 86px 215px;
+  padding: 100px 0 86px;
 }
 .offers-header {
   font-size: 36px;
@@ -144,12 +152,13 @@ main page styles
   margin-bottom: 50px;
 }
 .offers-list {
+  justify-content: center;
   gap: 30px;
 }
 .team {
   background: var(--secondary-background);
   text-align: center;
-  padding: 102px 215px 86px 215px;
+  padding: 102px 0 86px;
 }
 .team-header {
   font-size: 36px;
@@ -159,6 +168,7 @@ main page styles
   margin-bottom: 50px;
 }
 .team-list {
+  justify-content: center;
   gap: 30px;
 }
 .team-list-item {
@@ -235,7 +245,8 @@ portfolio styles
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 30px;
+  justify-content: center;
 }
 .project-list-item {
   border: 1px solid var(--project-item-border);
@@ -273,7 +284,7 @@ portfolio styles
 .footer {
   background-color: var(--background-color);
   line-height: 1.17;
-  padding: 60px 1154px 60px 215px;
+  padding: 60px 0 60px;
 }
 .footer-logo {
   color: var(--button-text-color);
@@ -286,6 +297,7 @@ portfolio styles
   color: var(--button-text-color);
   font-size: 14px;
   line-height: 1.71;
+  max-width: 231px;
 }
 .footer-adddres-anchor {
   text-decoration: none;
