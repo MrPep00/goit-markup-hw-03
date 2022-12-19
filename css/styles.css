@@ -72,6 +72,7 @@ body {
   color: var(--secondary-text-color);
   font-size: 14px;
   font-weight: 500;
+  margin-right: 50px;
 }
 .header-mail:hover {
   color: var(--button-color);
@@ -109,6 +110,7 @@ main page styles
   color: var(--button-text-color);
   margin-bottom: 30px;
   max-width: 58%;
+  margin: 0 auto 30px;
 }
 .buttons {
   font-size: 16px;
@@ -221,11 +223,13 @@ portfolio styles
 
 */
 .portfolio-box {
-  padding: 94px 215px;
+  padding: 94px 0px;
+  margin: 0 auto;
 }
 .filters-list {
   gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filters-list-button {
   font-weight: 500;
@@ -242,20 +246,16 @@ portfolio styles
   background-color: var(--button-color);
   color: var(--button-text-color);
 }
-.project-box {
-  margin-top: 34px;
-}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
+  row-gap: 30px;
+  column-gap: 27px;
 }
 .project-list-item {
   border: 1px solid var(--project-item-border);
 }
-
 .project-list-item-description {
   text-transform: capitalize;
   margin: 20px 24px;
@@ -279,6 +279,7 @@ portfolio styles
 .project-list-item-span-caps {
   text-transform: uppercase;
 }
+
 /*
 
 portfolio styles
