@@ -35,10 +35,9 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 93px;
+  align-items: center;
 }
-.menu-nav {
-  padding-top: 8px;
-}
+
 .nav-list-item a {
   text-decoration: none;
   color: var(--main-text-color);
