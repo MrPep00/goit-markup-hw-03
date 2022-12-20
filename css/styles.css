@@ -30,6 +30,7 @@ body {
 .header-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo-nav {
   display: flex;
@@ -62,9 +63,6 @@ body {
 }
 .logo-span {
   color: var(--button-color);
-}
-.header-contacts {
-  padding-top: 8px;
 }
 .header-mail {
   text-decoration: none;
